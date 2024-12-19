@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Manual</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .navbar {
+            background-color: #343a40;
+        }
+        .navbar-brand img {
+            width: 50px;
+        }
+        .navbar-nav .nav-link {
+            color: #fff;
+            font-weight: 600;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #ffc107;
+        }
+        .hero {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            border-radius: 0 0 20px 20px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        .manuals {
+            padding: 40px;
+            margin-top: -60px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .manuals h2 {
+            color: #343a40;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+        .manuals p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+        .manual-card img {
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            max-width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto; /* Centering the image horizontally */
+        }
+        .manual-card img:hover {
+            transform: scale(2.05);
+        }
+        /* Enhanced List Group Styles */
+        .list-group-item {
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            background-color: #f8f9fa;
+            border: 1px solid #6a11cb;
+            margin-bottom: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .list-group-item i {
+            color: #6a11cb;
+            margin-right: 15px;
+            font-size: 1.5rem;
+        }
+        .list-group-item:hover {
+            background-color: #6a11cb;
+            color: white;
+            transform: translateY(-5px);
+        }
+        .list-group-item:hover i {
+            color: white;
+        }
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="./ApplicationLogo.png" alt="Hospital Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/adminManual.html">Admin Manual</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/nurseManual.html">Nurse Manual</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Patient Manual</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/trainingManual.html">Training Manual</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Welcome to Patient User Manual</h1>
+            </div>
+        </section>
+
+        <section class="manuals container">
+            <h2>Patient Login Access</h2>
+            <p>The Add New User section allows you to add new patient and do all the registion process through the appliction.</p>
+
+            <div class="row manual-card">
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <img src="Credit_Images/Login_Appointment_Booking.png" alt="Image 1" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="fas fa-user"></i><strong> Login: </strong> Enter the Patient's registered email to access the patient portal.
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-user"></i><strong> Password: </strong> Enter the password corrosponding to the registered email.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </section>
+        <section class="manuals container">
+            <h2>Add New Patient</h2>
+            <p>The Add New User section allows you to add new patient and do all the registion process through the appliction.</p>
+
+            <div class="row manual-card">
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <img src="./PatientPhoto/Profile.png" alt="Image 1" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="fas fa-user"></i><strong> First Name: </strong> Enter the user's first name for identification and communication.
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-user"></i><strong> Middle Name: </strong> Provide the user's middle name to differentiate between similar names.
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-user"></i><strong> Last Name: </strong> Enter the user's last name for formal identification and record-keeping.
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-calendar-alt"></i><strong> Date of Birth: </strong> Input the user's date of birth for age verification and demographic purposes.
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-id-card"></i><strong> Medicare Number: </strong> Include the user's Medicare number for health insurance and medical records.
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-id-badge"></i><strong> Western Affairs Number: </strong> Add the Western Affairs number if applicable for administrative purposes.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="manuals container">
+            <h2>Patient Speciality Search</h2>
+            <p>Here you can find the best doctors as per your preferred dieases - "Search Best Doctor Here".</p>
+
+            <div class="row manual-card">
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <img src="./Credit_Images/Search_Menu_Patient_History.png" alt="Image 1" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="fas fa-user"></i><strong> Menu: </strong> Search the Menu and access the various portal/pages of the patient.
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-user"></i><strong> Speciality Search: </strong> Here patient can search the best doctors as per the preferred diagonisis.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </section>
+        <section class="manuals container">
+            <h2>Patient Search Result Page</h2>
+            <p>Here you can find the search as per the searched doctor preference i.e: Dermatologist</p>
+
+            <div class="row manual-card">
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <img src="Credit_Images/Find_Search_Speciality_Search.png" alt="Image 1" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="fas fa-user"></i><strong> Book: </strong> Book the best doctor's from the suggested list and procced ahead for the appointment.
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-user"></i><strong> Availablility: </strong> From Availablility Option, You can see the doctor's Availablility to book an appointment.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </section>
+        <section class="manuals container">
+            <h2>Patient Appointment Page</h2>
+            <p>Here you can Book Appointment for the specific doctor, read details and contact doctor. </p>
+
+            <div class="row manual-card">
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <img src="./Credit_Images/Availability_Appointment.png" alt="Image 1" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="fas fa-user"></i><strong> Working Hour: </strong> Book the best doctor's from the suggested list and procced ahead for the appointment.
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-user"></i><strong> Date: </strong> As per patiend and doctor Availablility, patient can search or book the preferred slot for the preferred date.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </section>
+        <section class="manuals container">
+            <h2>Patient Preferred Slot</h2>
+            <p>Here Patient can find the slot options and date option which will be available for the appointment. </p>
+
+            <div class="row manual-card">
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <img src="Credit_Images/Availability_Appointment.png" alt="Image 1" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="fas fa-user"></i><strong> Date: </strong> Calender will pop-up for the patient to find the dates to book appointment.
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-user"></i><strong> Time: </strong> As per the selected date, it will shows the available time slots of the doctor as per Availablility.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </section>
+        <section class="manuals container">
+            <h2>Patient Prescription</h2>
+            <p>Here Patient can find the attached Prescription given by doctors during appointment. </p>
+
+            <div class="row manual-card">
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <img src="./Credit_Images/List_Prescription.png" alt="Image 1" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="fas fa-user"></i><strong> Check Out: Patient can check out the Medication at their preferred delivery address </strong> 
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-user"></i><strong> Book Appointment: Patient can redirected directlt to the Book Appointment Page to book upcoming appointment</strong>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-user"></i><strong> Medication History: Patient can find out the stored prescriped medication in medication history</strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </section>
+        <section class="manuals container">
+            <h2>Patient Medication History</h2>
+            <p>Here Patient can find the attached medication history which was discussed during the appointment. </p>
+
+            <div class="row manual-card">
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <img src="./Credit_Images/Medication_history_Prescription.png" alt="Image 1" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="fas fa-user"></i><strong> Save: Patinet can edit/save data of the Medication history. </strong> 
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-user"></i><strong> Check Out: Patient can check out the Medication at their preferred delivery address</strong> 
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-user"></i><strong> Book Appointment: Patient can redirected directlt to the Book Appointment Page to book upcoming appointment</strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="manuals container">
+            <h2>Medication Details</h2>
+            <p>The Medication Details section store all the medical report of the patient and give the medication details of the patient.</p>
+        
+            <div class="row manual-card">
+                <div class="col-md-6 d-flex justify-content-center align-items-center order-md-2">
+                    <img src="./PatientPhoto/Medication.png" alt="Image 2" class="img-fluid">
+                </div>
+                
+                <div class="col-md-6 d-flex flex-column justify-content-center order-md-1">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="fas fa-calendar-alt"></i><strong> Medicine Details: </strong> This feature hold the information about the Medicine of the patient with the time at which the medicine should be taken and for which .
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-stethoscope"></i><strong> Causes: </strong> This appears to be a medication log. It shows the date, time of day, and what medications were taken, along with the dosage.
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-cogs"></i><strong> Medication Feedback: </strong> Patient can give the feedback about the medicine.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="manuals container">
+            <h2>Patient Presciption Check-Out Page</h2>
+            <p>Here Patient can find the attached medication history which was discussed during the appointment. </p>
+
+            <div class="row manual-card">
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <img src="./Credit_Images/CheckOut_Prescription.png   " alt="Image 1" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="fas fa-user"></i><strong> Check Medication: Patient can check or select the medication as prescriped for the doses requirement. </strong> 
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-user"></i><strong> Place Your Presciption: Patient can directly place the Prescription via portal to the delivered address</strong> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="manuals container">
+            <h2>Patient Presciption Thank-You Page</h2>
+            <p>Here Patient can find the attached medication history which was discussed during the appointment. </p>
+
+            <div class="row manual-card">
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <img src="./Credit_Images/ThankYou_Prescription.png" alt="Image 1" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="fas fa-user"></i><strong> Menu: Patient can search in the right top for the other menus</strong> 
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-user"></i><strong> Message: Patient can find the Thank You message when the placement of the medicatiion is done </strong> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="manuals container">
+            <h2>Patient Activity</h2>
+            <p>The Activity section show all the daily activity of the patient and generate the report about the patient.</p>
+        
+            <div class="row manual-card">
+                <div class="col-md-6 d-flex justify-content-center align-items-center ">
+                    <img src="./PatientPhoto/Activity.png" alt="Image 3" class="img-fluid">
+                    <img src="./PatientPhoto/Alert.png" alt="Image 4" class="img-fluid">
+
+                </div>
+                
+                <div class="col-md-6 d-flex flex-column justify-content-center ">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="fas fa-calendar-alt"></i><strong> Daily routine: </strong> This feature hold the information about the daily routine of the patient with the time and location 
+                            and give every minute report to the Application.Like Sleeping, Walking, Sitting and Standing.
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-stethoscope"></i><strong> Alert: </strong> This featue alert to the Nurse or the caretaker of the patient when ir record any unsual behavior of the patient.
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-cogs"></i><strong> Medication Feedback: </strong> Patient can give the feedback about the medicine.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="manuals container">
+            <h2>Patient History</h2>
+            <p>The Medication Details section store all the medical report of the patient and give the medication details of the patient.</p>
+        
+            <div class="row manual-card">
+                <div class="col-md-6 d-flex justify-content-center align-items-center order-md-2">
+                    <img src="./Credit_Images/Appointments_Patient_History.jpg" alt="Image 2" class="img-fluid">
+                </div>
+                
+                <div class="col-md-6 d-flex flex-column justify-content-center order-md-1">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="fas fa-calendar-alt"></i><strong> Appointment Details: Patient can find the several appointment details as per the previous appointments and details</strong> 
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-stethoscope"></i><strong> Sign-Out: Patient can directly sign-out, if wants to exit from the portal or application </strong> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="manuals container">
+            <h2>Patient Dashboard</h2>
+            <p>The Medication Details section store all the medical report of the patient and give the medication details of the patient.</p>
+        
+            <div class="row manual-card">
+                <div class="col-md-6 d-flex justify-content-center align-items-center order-md-2">
+                    <img src="./Credit_Images/Dashboar.png" alt="Image 2" class="img-fluid">
+                </div>
+                
+                <div class="col-md-6 d-flex flex-column justify-content-center order-md-1">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="fas fa-calendar-alt"></i><strong> Dashboard: It will also reflect the several parameters related to the specific patient in the dasboard in the form of the graphical interpretation </strong> 
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-stethoscope"></i><strong> Patient Visits: Patient can find the several finds of the appointments at the doctors and differents statics </strong> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="manuals container">
+            <h2>Troubleshooting</h2>
+            <p>Having trouble with the system? Check out our troubleshooting guide below to resolve common issues.</p>
+        
+            <div class="row manual-card">
+                <div class="col-md-6 d-flex justify-content-center align-items-center order-md-2">
+                    <img src="./PatientPhoto/PasswordForgot.png" alt="Image 4" class="img-fluid">
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="fas fa-question-circle"></i><strong> Login Issues: </strong>
+                            <p> Ensure you have the correct username and password. If you forget your password, use the "Forgot Password" link.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-question-circle"></i><strong> Check for Sensor Issues: </strong>
+                            <p> If the activity data seems inconsistent or missing, the sensors responsible for tracking movements might be malfunctioning..</p>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-question-circle"></i><strong> Activity Data Not Loading: </strong>
+                            <p> Refresh the page or check your internet connection.</p>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="manuals container">
+            <h2>Support Contacts</h2>
+            <p>For further assistance, contact the support team:</p>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <i class="fas fa-envelope"></i> Email: <a href="mailto:support@guardianmonitor.com">support@guardianmonitor.com</a>
+                </li>
+                <li class="list-group-item">
+                    <i class="fas fa-phone"></i> Phone: +1-800-123-4567
+                </li>
+                <li class="list-group-item">
+                    <i class="fas fa-comment"></i> Live Chat: Available on the website.
+                </li>
+            </ul>
+        </section>
+
+
+        
+        
+    
+    </main>    
+    
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Guardian Monitor. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
